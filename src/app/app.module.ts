@@ -11,6 +11,7 @@ import { NgChartsModule } from 'ng2-charts';
 
 import { environment } from 'src/environments/environment';
 import { GraficaComponent } from './components/grafica/grafica.component';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { GraficaComponent } from './components/grafica/grafica.component';
   imports: [
     BrowserModule,
     SocketIoModule.forRoot(config),
-    NgChartsModule
+    NgChartsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
