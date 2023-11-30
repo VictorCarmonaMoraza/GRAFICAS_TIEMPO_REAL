@@ -10,11 +10,13 @@ import { NgChartsModule } from 'ng2-charts';
 
 
 import { environment } from 'src/environments/environment';
+import { GraficaComponent } from './components/grafica/grafica.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GraficaComponent
   ],
   imports: [
     BrowserModule,
